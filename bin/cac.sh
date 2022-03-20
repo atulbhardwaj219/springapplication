@@ -14,8 +14,8 @@ fi
 
 sudo docker build -t spring --build-arg version="1.2" .
 
-aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 357022024302.dkr.ecr.us-east-1.amazonaws.com
+aws ecr get-login-password --region us-east-1 | sudo docker login --username AWS --password-stdin 357022024302.dkr.ecr.us-east-1.amazonaws.com
 
 sudo docker tag spring:latest 357022024302.dkr.ecr.us-east-1.amazonaws.com/post:latest
 
-docker push 357022024302.dkr.ecr.us-east-1.amazonaws.com/post:latest
+sudo docker push 357022024302.dkr.ecr.us-east-1.amazonaws.com/post:latest
