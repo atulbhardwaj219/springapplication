@@ -19,5 +19,4 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run the docekr build and push the image to registry
         run: |
-         whoami
-         sudo docker build -t spring --build-arg version="1.2" .
+         docker build -t spring --build-arg version="1.2" .
