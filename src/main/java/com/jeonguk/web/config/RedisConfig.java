@@ -21,7 +21,7 @@ public class RedisConfig {
 
         final JedisConnectionFactory connectionFactory = new JedisConnectionFactory(poolConfig);
         connectionFactory.setUsePool(true);
-        connectionFactory.setHostName("some-redis");
+        connectionFactory.setHostName("10.0.5.107");
         connectionFactory.setPort(6379);
         return connectionFactory;
     }
