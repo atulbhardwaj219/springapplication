@@ -13,7 +13,7 @@ jobs:
   main:
     runs-on: runner
     env:
-      AWS_ROLE: "arn:aws:iam::357022024302:role/builder"
+      AWS_ROLE: "arn:aws:iam::357022024302:role/Builder"
     if: github.base_ref == 'master' || github.event_name == 'push'
     steps:
       - uses: actions/checkout@v2
