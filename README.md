@@ -10,12 +10,6 @@ Spring Boot Mysql Redis  REST API Cache example
 
 ## Quick Start
 
-### Clone source
-```
-git clone https://github.com/jeonguk/spring-mysql-redis-cache.git
-cd spring-mysql-redis-cache
-```
-
 ```
 MySQL START
 ```
@@ -31,7 +25,7 @@ mvn clean package
 
 ### Run
 ```
-java -jar target/spring-mysql-redis-cache.jar
+java -jar target/spring-<version>.jar
 ```
 
 ##
