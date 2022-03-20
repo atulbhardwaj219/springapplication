@@ -16,7 +16,7 @@ spring:
 # = Mysql configurations
 # ===============================
   datasource:
-    url: jdbc:mysql://some-mysql:3306/spring?useUnicode=true&characterEncoding=UTF8&useSSL=false
+    url: jdbc:mysql://10.0.5.107:3306/spring?useUnicode=true&characterEncoding=UTF8&useSSL=false
     username: root
     password: my-secret-pw
 
@@ -25,7 +25,7 @@ spring:
 # ===============================ß
   redis:
     database: 0
-    host: some-redis
+    host: 10.0.5.107
     port: 6379
     password:
     pool:
