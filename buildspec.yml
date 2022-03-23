@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      docker: 18      
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Building the Docker image...
+      - ls -l
+      - pwd
+      - chmod +x ./bin/cac.sh
+      - ./bin/cac.sh
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Pushing the Docker images...
+      - echo Writing image definitions file...
+      - printf '[{"name":"post","imageUri":"%s"}]' 57022024302.dkr.ecr.us-east-1.amazonaws.com/post:latest > imagedefinitions.json
+artifacts:
+    files: imagedefinitions.json
