@@ -1,4 +1,4 @@
-name: Build Workflow
+name: Buil Workflow
 on:
   pull_request:
     branches: [atb-cehck]
