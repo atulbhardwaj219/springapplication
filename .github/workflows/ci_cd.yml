@@ -1,13 +1,13 @@
 name: Build Workflow
 on:
   pull_request:
-    branches: [master,dev,pre]
+    branches: [atb-cehck]
     types:
       - opened
       - reopened
       - synchronize
   push:
-    branches: [master,dev,pre]
+    branches: [atb-cehck]
 
 jobs:
   main:
